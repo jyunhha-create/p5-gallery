@@ -70,8 +70,9 @@
       p.fill(100);
       p.textSize(12);
       p.textAlign(p.CENTER);
-      p.text("내 캐리커쳐쳐", cx, p.height - 20);
+      p.text("내 캐리커쳐", cx, p.height - 20);
     };
   };
   new p5(s2);
+
 
