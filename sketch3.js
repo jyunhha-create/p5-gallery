@@ -1,4 +1,4 @@
-let s2 = (p) => {
+    let s2 = (p) => {
     let bgColor = '#E8D9FF';
     let hairColor = '#000000';
     let faceColor = '#F9E3D6';
@@ -70,7 +70,8 @@ let s2 = (p) => {
       p.fill(100);
       p.textSize(12);
       p.textAlign(p.CENTER);
-      p.text("과제 2: 정적 이미지", cx, p.height - 20);
+      p.text("내 캐리커쳐쳐", cx, p.height - 20);
     };
   };
   new p5(s2);
+
