@@ -1,7 +1,22 @@
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
-    background-color: #f0f0f0;
+    
+    /* 1. 기본 배경색 (아주 밝은 연보라빛 흰색) */
+    background-color: #fbf9ff;
+
+    /* 2. 연한 연보라색 사선 스프라이트 패턴 그리기 */
+    /* repeating-linear-gradient: 반복되는 선형 그라데이션으로 패턴을 만듭니다. */
+    background-image: repeating-linear-gradient(
+        135deg,                     /* 사선 각도 (보여주신 사진과 비슷하게) */
+        transparent,                /* 투명한 부분 시작 */
+        transparent 10px,           /* 투명한 부분 너비 (간격) */
+        rgba(216, 191, 216, 0.25) 10px, /* 연한 연보라색 줄 시작 (투명도 25%) */
+        rgba(216, 191, 216, 0.25) 12px  /* 연한 연보라색 줄 끝 (굵기 2px) */
+    );
+
+    /* 스크롤 내려도 배경은 가만히 있게 하기 (더 고급스러움!) */
+    background-attachment: fixed;
 }
 
 .grid-container {
@@ -27,4 +42,5 @@ body {
 canvas {
     max-width: 100%;
     height: auto !important;
+
 }
